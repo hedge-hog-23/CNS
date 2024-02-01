@@ -11,13 +11,13 @@ int main()
 {
     char *string = malloc(255 * sizeof(char)); // initial size 255 => dynamic memory allocation
     scanf("%s",string);
-    string[strlen(string)] = '\0';  //add a null char at end 
+    string[strlen(string)] = '\0';  //add a null char. at end 
     int length = strlen(string);  // length of str
     
     // char string[256];
     
     int k;
-    scanf("%d",&k);
+    scanf("%d",&k);    // no. of times to shift
     for(int i=0;i<length;i++){
         int ascii = (int)string[i]-97;
         if(ascii > (25-k)){
